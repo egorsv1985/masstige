@@ -1,0 +1,6 @@
+.pseudo-grid {
+	&::before {
+		background: url('@img/icons/grid.svg') no-repeat center / cover;
+		z-index: -1;
+	}
+}

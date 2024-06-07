@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/_head.html',{ "title":"О студии" })
+
+<body class="bg-gray_500 body font-SFUIText cursor-[url(../images/icons/cursor.svg),_pointer]">
+	<div class="wrapper">
+		@@include('components/_header.html',{})
+		<main class="pt-28">
+			<div class="container">
+				@@include('sections/_breadcrumb.html',{"page":"О студии"})
+				@@include('sections/_about-page.html',{})
+				@@include('sections/_map-page.html',{})
+				@@include('sections/_instrument.html',{})
+				@@include('sections/_team.html',{})
+				<section class="relative py-20 quote">
+					@@include('sections/_quote.html',{
+					"img-quote": "jobs.png",
+					"alt-quote": "Артемий Лебедев",
+					"h2-quote": "Мы не обсуждаем дизайн. Мы обсуждаем: решена задача, которая перед нами была поставлена, или не решена",
+					"author-quote": "Артемий Лебедев",
+					"description-quote": "Основатель Apple",
+					"text-size":"3xl",
+					"sm-text-size": "[40px]",
+					})
+				</section>
+			</div>
+			@@include('sections/_reviews.html',{})
+			<div class="container">
+				@@include('sections/_logos.html',{})
+				@@include('sections/_contacts.html',{})
+			</div>
+		</main>
+		@@include('components/_footer.html',{})
+		@@include('components/_popup.html',{})
+	</div>
+</body>
+
+</html>

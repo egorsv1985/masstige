@@ -1,0 +1,88 @@
+<section class="py-6 contacts">
+
+	<div class="grid grid-cols-6 gap-7">
+		<div class="flex flex-col col-span-6 pb-6 lg:col-span-3">
+			<div class="mb-4">				
+				@@include('../blocks/_title-page.html',{ "title-page":"Контакты" })
+			</div>
+			<div class="mb-12">
+				@@include('../blocks/_text-section.html', { "text-section": "Для сотрудничества, оставьте заявку на сайте, или свяжитесь с нами любым удобным способом:"})
+			</div>
+			<div class="mb-4 text-xl font-bold leading-tight text-white font-display">
+				Менеджеры
+			</div>
+			<div class="flex flex-wrap items-center gap-7 mb-14">
+				<div class="flex">
+					<div class="rounded-full border bg-gray_500 border-blue_500 p-1 w-[65px] h-[65px] about__box-img relative">
+						<img src="@img/team1.png" alt="team" class="rounded-full" />
+					</div>
+					<div class="rounded-full border bg-gray_500 -ml-2 border-purple_500 p-1 w-[65px] h-[65px] about__box-img relative">
+						<img src="@img/team7.png" alt="team" class="rounded-full" />
+					</div>
+				</div>
+				<ul class="flex flex-col gap-2 text-sm leading-tight text-txt">
+					<li class="">
+						<div class="flex gap-2">
+							<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+							<p class="text-sm leading-tight text-txt">Елена</p>
+						</div>
+					</li>
+					<li class="flex gap-3">
+						<div class="flex gap-2">
+							<span class="w-4 h-4 rounded-full border-purple_border bg-purple_500"></span>
+							<p class="text-sm leading-tight text-txt">Полина</p>
+						</div>
+					</li>
+				</ul>
+				<div class="flex gap-3">
+					<span class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_500">
+						<img src="@img/icons/alarm.svg" alt="Пн-Чт: 09:00 - 18:00 Пт: 09:00 - 17:00 Сб-Вс: выходной" />
+					</span>
+					<p class="text-sm font-medium leading-tight text-txt font-display">
+						Пн-Чт: 09:00 - 18:00<br>
+						Пт: 09:00 - 17:00<br>
+						Сб-Вс: выходной<br>
+					</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-6 gap-7">
+				<div class="col-span-6 lg:col-span-3"></div>
+				<div class="col-span-6 lg:col-span-3"></div>
+			</div>
+			<h3 class="mb-4 text-xl font-bold leading-tight text-white font-display">
+				Мы в социальных сетях
+			</h3>
+			@@include('../blocks/_social.html',{})
+			<div class="grid grid-cols-6 mt-4 lg:mt-auto gap-7">
+				<div class="col-span-6 md:col-span-3 lg:col-span-2">
+					<a href="" class="flex gap-3">
+						<span class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_500">
+							<img src="@img/icons/map.svg" alt="г. Минск, БЦ S.Union" />
+						</span>
+						<p class="text-sm font-medium leading-tight text-txt font-display">
+							г. Минск,<br />
+							БЦ S.Union
+						</p>
+					</a>
+				</div>
+				<div class="col-span-6 md:col-span-3 lg:col-span-4">
+					<form class="flex gap-3">
+						<label for="upload-file"
+							class="flex items-center w-full h-full gap-3 text-sm text-txt font-display text-balance">
+							<span
+								class="flex items-center justify-center w-10 h-10 border rounded-full min-w-10 border-gray_border bg-gray_500">
+								<img src="@img/icons/upload-file.svg" alt="загрузите файл" />
+							</span>
+							<span>Если у вас есть ТЗ, вы можете прислать его нам и мы оценим
+								проект</span>
+						</label>
+						<input class="hidden" aria-describedby="upload_file" id="upload-file" type="file" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-6 lg:col-span-3">
+			@@include('../blocks/_contacts-item.html',{})
+		</div>
+	</div>
+</section>

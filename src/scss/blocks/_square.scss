@@ -1,0 +1,11 @@
+.square {
+	width: 0.8125rem;
+	height: 0.8125rem;
+	gap: 0.1875rem;
+	grid-template-columns: 1fr 1fr;
+	&__item {
+		width: 0.3125rem;
+		height: 0.3125rem;
+		border-radius: 50%;
+	}
+}

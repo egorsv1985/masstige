@@ -1,0 +1,26 @@
+.slick-arrow {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url('@img/icons/arrow_slider.svg') no-repeat center;
+	border: 1px solid rgb(50, 50, 50);
+	text-indent: -9999px;
+	overflow: hidden;
+	
+
+	z-index: 10;
+	&:hover {
+		background: url('@img/icons/arrow_slider-white.svg') no-repeat center;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+}
+
+.slick-prev {
+	transform: rotate(180deg);
+}
+.sale {
+	.slick-track {
+		display: flex;
+	}
+}
+

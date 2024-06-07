@@ -1,0 +1,14 @@
+.quote {
+	background: url('@img/icons/grid.svg') no-repeat right center / 445px 100%;
+
+	// padding-block: 6.25rem;
+	&__title {
+		background: url('@img/icons/quotes.svg') no-repeat 1% 9% / 49px 38px;
+		// 	padding-left: 100px;
+	}
+}
+.about-page {
+	.quote__title {
+		background-position-y: top;
+	}
+}

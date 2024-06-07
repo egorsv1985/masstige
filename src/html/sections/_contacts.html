@@ -1,0 +1,51 @@
+<section class="contacts py-14">
+
+	<div class="grid grid-cols-6 gap-7">
+		<div class="flex flex-col col-span-6 pb-6 lg:col-span-3">
+			<div class="mb-4 max-w-32">
+				@@include('../blocks/_title-section.html', { "title-section": "Контакты",
+				"color": "gray" })
+			</div>
+			<div class="mb-4">
+				@@include('../blocks/_h2-section.html', { "h2-section": "Расслабься, мы сделаем за тебя всю работу!"})
+			</div>
+			<p class="text-xl leading-tight text-txt mb-11">
+				Мы поможем вам создать дизайн, который очаровывает и вдохновляет!
+			</p>
+			<h3 class="mb-4 text-xl font-bold leading-tight text-white font-display">
+				Мы в социальных сетях
+			</h3>
+			@@include('../blocks/_social.html',{})
+			<div class="grid grid-cols-6 mt-4 lg:mt-auto gap-7">
+				<div class="col-span-6 md:col-span-3 lg:col-span-2">
+					<a href="" class="flex gap-3">
+						<span class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_500">
+							<img src="@img/icons/map.svg" alt="г. Минск, БЦ S.Union" />
+						</span>
+						<p class="text-sm font-medium leading-tight text-txt font-display">
+							г. Минск,<br />
+							БЦ S.Union
+						</p>
+					</a>
+				</div>
+				<div class="col-span-6 md:col-span-3 lg:col-span-4">
+					<form class="flex gap-3">
+						<label for="file" class="flex items-center w-full h-full gap-3 text-sm text-txt font-display text-balance">
+							<span
+								class="flex items-center justify-center w-10 h-10 border rounded-full min-w-10 border-gray_border bg-gray_500">
+								<img src="@img/icons/upload-file.svg" alt="загрузите файл" />
+							</span>
+							<span>Если у вас есть ТЗ, вы можете прислать его нам и мы оценим
+								проект</span>
+						</label>
+						<input class="hidden" aria-describedby="upload_file" id="file" type="file" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-6 lg:col-span-3">
+			@@include('../blocks/_contacts-item.html',{})
+		</div>
+	</div>
+
+</section>

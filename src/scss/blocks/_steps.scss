@@ -1,0 +1,107 @@
+.steps {
+	&__list {
+		li {
+			&::before {
+				background-image: url('@img/icons/square-steps.svg');
+				left: -2%;
+				bottom: -19%;
+				top: 11%;
+				right: -3%;
+			}
+		}
+	}
+}
+@keyframes changeColor {
+	0% {
+		fill: red;
+	}
+	20% {
+		fill: red;
+	}
+	25% {
+		fill: yellow;
+	}
+	65% {
+		fill: yellow;
+	}
+	
+	75% {
+		fill: green;
+	}
+	100% {
+		fill: green;
+	}
+}
+@keyframes changeOpacity {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	
+	85% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.svg-animation:nth-child(1)::before {
+	animation: changeOpacity 7s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite ;
+	animation-delay: 0s;
+}
+.svg-animation:nth-child(1) svg {
+	animation: changeColor 7s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 0s;
+}
+
+.svg-animation:nth-child(2)::before {
+	animation: changeOpacity 7s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 1s;
+}
+.svg-animation:nth-child(2) svg {
+	animation: changeColor 7s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 1s;
+}
+
+.svg-animation:nth-child(3)::before {
+	animation: changeOpacity 5s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 2s;
+}
+.svg-animation:nth-child(3) svg {
+	animation: changeColor 5s infinite;
+	animation-delay: 2s;
+}
+.svg-animation:nth-child(4)::before {
+	animation: changeOpacity 4s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay:3s;
+}
+
+.svg-animation:nth-child(4) svg {
+	animation: changeColor 4s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 3s;
+}
+.svg-animation:nth-child(5)::before {
+	animation: changeOpacity 5s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 4s;
+}
+.svg-animation:nth-child(5) svg {
+	animation: changeColor 5s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 4s;
+}
+.svg-animation:nth-child(6)::before {
+	animation: changeOpacity 4s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 5s;
+}
+.svg-animation:nth-child(6) svg {
+	animation: changeColor 4s cubic-bezier( 0.92, 0.16, 0.93, 0.4 )  infinite;
+	animation-delay: 5s;
+}

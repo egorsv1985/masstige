@@ -1,0 +1,18 @@
+.about {
+	
+	
+
+	.quote__title {
+		background-position: 1% 0;
+	}
+	span {
+		&::before {
+			background-image: url('@img/icons/square.svg');
+			left: -6px;
+			bottom: -20px;
+			height: 143%;
+			width: 102%;
+		}
+	}
+}
+

@@ -1,0 +1,128 @@
+.hero {
+	&__gradient{
+		
+		&::before,
+		&::after {
+		content: '';
+		display: block;
+		
+		z-index: 11;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	&::before {	
+		background: linear-gradient(
+			180deg,
+			rgb(11, 11, 12) 50%,
+			rgba(11, 11, 12, 0) 97.833%
+		);
+	}
+	&::after {
+		background: linear-gradient(
+			0deg,
+			rgb(11, 11, 12) 50%,
+			rgba(11, 11, 12, 0) 97.833%
+			);
+		}
+	}
+}
+
+.animate-left-right0 {
+	animation: animate-left-right0 4s ease-in-out infinite alternate;
+}
+.animate-left-right1 {
+	animation: animate-left-right1 4s ease-in-out infinite alternate;
+}
+.animate-left-right2 {
+	animation: animate-left-right2 4s ease-in-out infinite alternate;
+}
+.animate-left-right3 {
+	animation: animate-left-right3 4s ease-in-out infinite alternate;
+}
+.animate-left-right4 {
+	animation: animate-left-right4 4s ease-in-out infinite alternate;
+}
+.animate-left-right5 {
+	animation: animate-left-right5 4s ease-in-out infinite alternate;
+}
+.animate-left-right6 {
+	animation: animate-left-right6 4s ease-in-out infinite alternate;
+}
+.animate-left-right7 {
+	animation: animate-left-right7 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate-left-right0 {
+	0% {
+		transform: translate(10%, -10%);
+	}
+	100% {
+		transform: translate(100%, 5%);
+	}
+}
+@keyframes animate-left-right1 {
+	0% {
+		transform: translate(-35%, 2%);
+	}
+	100% {
+		transform: translate(100%, 12%);
+	}
+}
+@keyframes animate-left-right2 {
+	0% {
+		transform: translate(-50%, -20%);
+	}
+	100% {
+		transform: translate(20%, 20%);
+	}
+}
+@keyframes animate-left-right3 {
+	0% {
+		transform: translate(35%);
+	}
+	100% {
+		transform: translate(100%, 20%);
+	}
+}
+@keyframes animate-left-right4 {
+	0% {
+		transform: translate(100%, 3%);
+	}
+	100% {
+		transform: translate(75%, 10%);
+	}
+}
+@keyframes animate-left-right5 {
+	0% {
+		transform: translate(-100%, 4%);
+	}
+	100% {
+		transform: translate(-10%, 10%);
+	}
+}
+@keyframes animate-left-right6 {
+	0% {
+		transform: translate(-85%, -10%);
+	}
+	100% {
+		transform: translate(75%, 30%);
+	}
+}
+@keyframes animate-left-right7 {
+	0% {
+		transform: translate(-60%, -20%);
+	}
+	100% {
+		transform: translate(75%, 10%);
+	}
+}
+
+@keyframes translateYAnimation {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}

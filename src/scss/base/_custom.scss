@@ -1,0 +1,167 @@
+// Your variable overrides
+$body-bg: #0b0b0c;
+$body-color: #fff;
+
+// Bootstrap and its default variables
+$theme-colors: (
+	'gray': #0b0b0c,
+	'gray_light': #1e1e1e,
+	'gray_border': #323232,
+	'txt': #bdbdc0,
+	'white': #fff,
+	'purple': #7053ff,
+	'purple_light': #7f65ff,
+	'purple_border': #917aff,
+	'pink': #ff2c60,
+	'pink_light': #ff547e,
+	'pink_border': #ff7194,
+	'blue': #3f94ff,
+	'blue_border': #72b0ff,
+	'blue_light': #58a2ff,
+	'green': #31b970,
+	'green_light': #31b970,
+	'green_border': #31b970,
+	'yellow': #fbbf0d,
+	'yellow_light': #ffca2e,
+	'yellow_border': #ffd65e,
+	'red': #f24822,
+	'red_light': #fb6240,
+	'red_border': #ff7050,
+);
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1100px,
+	xxl: 1140px,
+);
+
+$font-family-sans-serif: 'SF UI Display', sans-serif;
+
+// @import '../node_modules/bootstrap/scss/bootstrap';
+.header .dropdown-toggle::after {
+	display: none;
+}
+.header .dropdown-menu.show {
+	background-color: #fff;
+	padding-bottom: 1.875rem;
+	padding-inline: 2.1875rem;
+
+	inset: -4px auto auto 1px !important;
+
+	a {
+		color: #1e1e1e;
+		padding-block: 0.125rem;
+		position: relative;
+		font-size: 0.875rem;
+		padding-left: 1.25rem;
+		&::before {
+			content: '';
+			display: block;
+			width: 0.9375rem;
+			height: 0.9375rem;
+			background-color: #fbbf0d;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+	}
+	li {
+		&:nth-child(2) {
+			a {
+				&::before {
+					background-color: #3f94ff;
+				}
+			}
+		}
+		&:nth-child(3) {
+			a {
+				&::before {
+					background-color: #ff2c60;
+				}
+			}
+		}
+		&:nth-child(4) {
+			a {
+				&::before {
+					background-color: #31b970;
+				}
+			}
+		}
+		&:nth-child(5) {
+			a {
+				&::before {
+					background-color: #7053ff;
+				}
+			}
+		}
+		&:last-child {
+			a {
+				&::before {
+					background-color: #f24822;
+				}
+			}
+		}
+	}
+}
+// @import '../blocks/**.*scss';
+.btn-header {
+	padding: 15px 30px;
+	border-radius: 80px;
+	font-family: 'SF UI Display';
+
+	&.show {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		padding-right: 9.8125rem;
+	}
+}
+.btn-primary {
+	border: 1px solid #323232;
+	background-color: #1e1e1e;
+	padding: 15px 10px;
+	border-radius: 80px;
+	&:hover {
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+	&:active {
+		border-color: #1e1e1e;
+		background-color: #323232;
+	}
+}
+.btn-secondary {
+	border: 1px solid #72b0ff;
+	background-color: #3f94ff;
+	padding: 15px 10px;
+	border-radius: 80px;
+	max-width: 12.1875rem;
+	&:hover {
+		background-color: #58a2ff;
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+	&:active {
+		border-color: #3f94ff;
+		background-color: #58a2ff;
+	}
+}
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+	border-color: #1e1e1e;
+	background-color: #323232;
+}
+p {
+	margin-bottom: 0;
+}
+.nav-tabs {
+	border-radius: 2.5rem;
+}
+.container {
+	padding-inline: 8px;
+}

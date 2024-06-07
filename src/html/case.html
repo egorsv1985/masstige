@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/_head.html',{ "title":"Название проекта" })
+
+<body class="bg-gray_500 body font-SFUIText">
+	<div class="wrapper">
+		@@include('components/_header.html',{})
+		<main class="pt-24">
+			<div class="container">
+				@@include('sections/_breadcrumb.html',{"page":"Название проекта"})
+				@@include('sections/_case.html',{})
+				@@include('sections/_design-elements.html',{})
+			</div>
+			@@include('sections/_result.html',{})
+			<div class="container">
+				@@include('sections/_total.html',{})
+				@@include('sections/_contacts.html',{})
+			</div>
+		</main>
+		@@include('components/_footer.html',{})
+		@@include('components/_popup.html',{})
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/_head.html',{ "title":"Разработка" })
+
+<body class="bg-gray_500 body font-SFUIText">
+	<div class="container wrapper">
+
+		@@include('components/_header.html',{})
+
+		<main class="pt-24">
+			@@include('sections/_breadcrumb.html',{"page":"Разработка"})
+			@@include('sections/_services-page.html',{})
+			@@include('sections/_about-service.html',{})
+			@@include('sections/_tariffs.html',{})
+			@@include('sections/_portfolio.html',{})
+			@@include('sections/_sale.html',{})
+			<div class="mb-7">
+				@@include('blocks/_h2-section.html', { "h2-section": "Вы получите полноценный сайт с уникальным дизайном для вашей ниши"})
+			</div>
+			@@include('sections/_contacts-form.html',{})
+			@@include('sections/_faq.html',{})
+			@@include('sections/_contacts.html',{})
+			
+		</main>
+		@@include('components/_footer.html',{})
+		@@include('components/_popup.html',{})
+	</div>
+</body>
+
+</html>

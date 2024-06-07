@@ -1,0 +1,133 @@
+<section class="py-10 contacts-form">
+	
+		<div
+			class="grid grid-cols-12 bg-gray_light border gap-7 border-gray_border rounded-[10px] py-14 px-9"
+		>
+			<div class="col-span-12 lg:col-span-6">
+				<div class="mb-4 ">
+					@@include('../blocks/_h2-section.html', { "h2-section": "Давайте сделаем сильный проект вместе!"})
+				</div>
+				<div class="mb-5">
+					@@include('../blocks/_text-section.html', { "text-section": "Оставьте свой телефон, и аккаунт-менеджер сориентирует по порядку работы	стоимости"})					
+				</div>			
+				<div class="flex flex-wrap justify-between gap-4 mb-7 sm:justify-start">
+					@@include('../blocks/_messengers.html',{})
+					@@include('../blocks/_phones.html',{})
+				</div>
+				<div
+				class="mb-4 "
+				>
+				@@include('../blocks/_title-contact.html',{"title-contact": "Контактное лицо"})
+					
+				</div>
+				<div class="flex flex-wrap items-center gap-7">
+					<div class="flex">
+						<div class="rounded-full border bg-gray_500 border-blue_500 p-1 w-[65px] h-[65px] about__box-img relative">
+							<img src="@img/team1.png" alt="team" class="rounded-full" />
+						</div>
+						<div class="rounded-full border bg-gray_500 -ml-2 border-purple_500 p-1 w-[65px] h-[65px] about__box-img relative">
+							<img src="@img/team7.png" alt="team" class="rounded-full" />
+						</div>
+					</div>
+					<ul class="flex flex-col gap-2 text-sm leading-tight text-txt">
+						<li class="">
+							<div class="flex gap-2">
+								<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+								<p class="text-sm leading-tight text-txt">Менеджер Елена</p>
+							</div>
+						</li>
+						<li class="flex gap-3">
+							<div class="flex gap-2">
+								<span class="w-4 h-4 rounded-full border-purple_border bg-purple_500"></span>
+								<p class="text-sm leading-tight text-txt">Менеджер Полина</p>
+							</div>
+						</li>
+					</ul>
+
+					
+
+					<a href="" class="flex gap-3">
+						<span
+							class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_light"
+							><img src="@img/icons/map.svg" alt="г. Минск, БЦ S.Union"
+						/></span>
+						<p class="text-sm font-medium text-txt font-display">
+							г. Минск,<br />
+							БЦ S.Union
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-span-12 py-3 lg:ms-24 lg:col-span-6 lg:me-14">
+				<form class="flex flex-col h-full gap-2" action="#">
+					<div>
+						<label for="name" class="hidden">Ваше имя</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt"
+							placeholder="Ваше имя"
+							required=""
+						/>
+					</div>
+					<div>
+						<label for="tel" class="hidden">Телефон</label>
+						<input
+							type="tel"
+							name="tel"
+							id="tel"
+							placeholder="Телефон"
+							class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none form-phone bg-gray_light border-gray_border text-txt"
+							required=""
+						/>
+					</div>
+					<div class="">
+						<label
+							for="work"
+							class="hidden mb-2 text-sm font-medium text-white dark:text-white"
+							>Вид работы</label
+						>
+						<select
+							id="work"
+							class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt"
+						>
+							<option selected="">Вид работы</option>
+							<option>Визитки</option>
+							<option>Фирменный стиль</option>
+							<option>Дизайн упаковки</option>
+						</select>
+					</div>
+
+					<div class="flex items-start mt-2 mb-2">
+						<div class="flex items-center h-5">
+							<input
+								id="terms"
+								aria-describedby="terms"
+								type="checkbox"
+								class="w-5 h-5 border rounded-sm border-gray_border bg-gray_light checked::border-blue_border checked:bg-blue_500 ring-offset-0 checked:ring-offset-0 focus:ring-offset-0 focus:border-gray_border focus:bg-gray_light focus:ring-0 focus:outline-none"
+								required=""
+							/>
+						</div>
+						<div class="ml-3 text-sm">
+							<label for="terms" class="text-base leading-tight text-txt"
+								>Оставляя заявку, вы соглашаетесь на обработку
+								<a class="underline" href="#">персональных данных</a>
+								и
+								<a class="underline" href="#">политикой конфиденциальности</a>
+							</label>
+						</div>
+					</div>					
+					<button
+						type="submit"
+						class="relative  overflow-hidden  transition-all  shadow  hover:bg-white group font-medium px-8 py-4 rounded-[80px] border justify-center items-center gap-2.5 inline-flex hover:text-blue_500 text-center text-white text-base font-display border-blue_border bg-blue_500 text-nowrap hover:border-white/50 leading-tight w-full mt-auto"
+					>
+					<span
+						class="absolute inset-0 border-0 group-hover:border-[40px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+					<span
+						class="relative w-full text-base leading-tight text-white transition-colors duration-500 ease-in-out text-nowrap group-hover:text-blue_500">Связаться с нами</span>	
+					</button>
+				</form>
+			</div>
+		</div>	
+</section>

@@ -1,0 +1,228 @@
+<section class="py-16 portfolio-page">
+	<div
+		class="mb-12 pseudo-grid relative before:absolute before:block  before:top-[74%] before:left-[60%] before:-bottom-[168%] before:right-0">
+		@@include('../blocks/_title-page.html', { "title-page": "Мы создаем бренды, разрабатываем и развиваем"})
+		@@include('../blocks/_span-page.html', { "span-page": "digital-проекты"})
+	</div>
+	<div class="relative">
+		<div class="items-center hidden gap-4 sm:flex">
+			<ul class="flex  flex-col sm:flex-row -mb-px p-4 gap-2 text-center bg-gray_light border-gray_border rounded-[40px]"
+				aria-labelledby="dropdownTabListButton" id="portfolio-tab" data-tabs-toggle="#portfolio-page-tab-content"
+				role="tablist">
+				@@include('../blocks/_tab-item.html', { "tab": "page-branding","color": "yellow", "title" :"Брендинг" })
+				@@include('../blocks/_tab-item.html', { "tab": "page-development","color": "blue", "title" :"Разработка" })
+				@@include('../blocks/_tab-item.html', { "tab": "page-promotion","color": "pink", "title" :"Реклама" })
+			</ul>
+		</div>
+		<div class="flex sm:hidden">
+			<!-- Dropdown button -->
+			<button id="dropdownTabListButton" data-dropdown-toggle="dropdown" data-dropdown-on-hide="true"
+				class="px-4 py-1 text-lg font-medium leading-tight text-white  border relative    inline-block border-white rounded-[20px]"
+				type="button">Портфолио
+			</button>
+			<!-- Dropdown menu -->
+			<div id="dropdown" class="z-10 hidden py-2">
+				<ul
+					class="flex  flex-col sm:flex-row -mb-px p-4 gap-2 text-center bg-gray_light border-gray_border rounded-[40px]"
+					aria-labelledby="dropdownTabListButton" data-tabs-toggle="#portfolio-page-tab-content" role="tablist">
+				@@include('../blocks/_tab-item.html', { "tab": "page-branding","color": "yellow", "title" :"Брендинг" })
+				@@include('../blocks/_tab-item.html', { "tab": "page-development","color": "blue", "title" :"Разработка" })
+				@@include('../blocks/_tab-item.html', { "tab": "page-promotion","color": "pink", "title" :"Реклама" })
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="portfolio-page-tab-content" class="mb-24">
+		<div class="hidden" id="page-branding" role="tabpanel" aria-labelledby="page-branding-tab">
+			<div class="sm:grid sm:grid-cols-2 gap-x-7 gap-y-9 page-branding__slider slider">
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir1.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix1.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir2.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix2.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir1.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix1.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir2.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix2.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+			</div>
+		</div>
+		<div class="hidden" id="page-development" role="tabpanel" aria-labelledby="page-development-tab">
+			<div class="sm:grid sm:grid-cols-2 gap-x-7 gap-y-9 page-development__slider slider">
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir1.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix1.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir2.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix2.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir1.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix1.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir2.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix2.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+			</div>
+		</div>
+		<div class="hidden" id="page-promotion" role="tabpanel" aria-labelledby="page-promotion-tab">
+			<div class="sm:grid sm:grid-cols-2 gap-x-7 gap-y-9 page-promotion__slider slider">
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir1.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix1.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir2.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix2.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir1.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix1.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "Фирменный стиль",
+				"img" : "fir2.png",
+				"alt" : "fir",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+				@@include('../blocks/_portfolio-item.html',
+				{ "color": "yellow",
+				"text": "SMM-дизайн",
+				"img" : "phoenix2.png",
+				"alt" : "phoenix",
+				"title" : "Название проекта",
+				"description" : "Деятельность"})
+			</div>
+		</div>
+	</div>
+	<div class="justify-center hidden sm:flex ">
+		<a href="#"
+			class="rounded-[80px]  justify-center items-center gap-2.5 text-center text-white text-base font-display  bg-blue_500 text-nowrap hover:border-white/50 leading-tight max-w-48 relative  inline-block px-8 py-4 overflow-hidden font-medium transition-all border shadow border-blue_border  hover:bg-white group">
+			<span
+				class="absolute inset-0 border-0 group-hover:border-[40px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+			<span
+				class="relative w-full text-base leading-tight text-white transition-colors duration-500 ease-in-out text-nowrap group-hover:text-blue_500">Увидеть
+				больше</span>
+		</a>
+	</div>
+</section>

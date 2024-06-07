@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Название проекта</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/template_styles.css" />	
+	<link rel="apple-touch-icon" sizes="180x180" href="files/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+	<link rel="manifest" href="files/site.webmanifest">
+	<link rel="mask-icon" href="files/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+
+	<script src="js/app.js"></script>
+</head>
+
+<body class="bg-gray_500 body font-SFUIText">
+	<div class="wrapper">
+		<header
+	class="fixed py-4 header z-[9999] left-0 right-0 top-0 before:absolute before:inset-0 before:bg-gray_500 before:transition-opacity before:duration-500 before:ease-out backdrop-blur-lg before:opacity-80 before:-z-10">
+	<div class="container px-2">
+		<div class="z-40 flex items-center justify-between pb-3 border-b border-b-gray_border">
+			<div class="w-1/3 mr-3 sm:w-1/4 lg:w-1/6 max-[400px]:w-1/2">
+				<a href="/" class="block max-w-full text-center">
+					<img src="./images/logo.png" alt="logo" class="max-w-full" width="160" height="34" />
+				</a>
+			</div>
+			<div class="hidden w-1/2 mr-3 md:mr-7 md:w-1/5 sm:block">
+				<button id="menuDropdownButton" data-dropdown-toggle="menuDropdown" data-dropdown-trigger="hover"
+					class="gap-2 bg-white rounded-[5rem] px-8 py-4 text-center flex items-center" type="button">
+					<span class="grid grid-flow-row gap-[3px] grid-cols-2 grid-rows-2">
+	<span class="bg-blue_500  w-[5px] rounded-full h-[5px]"></span>
+	<span class="bg-green_500  w-[5px] rounded-full h-[5px]"></span>
+	<span class="bg-red_500  w-[5px] rounded-full h-[5px]"></span>
+	<span class="bg-yellow_500  w-[5px] rounded-full h-[5px]"></span>
+</span>
+
+					<span class="text-base font-medium text-gray_500 font-display">
+						Услуги
+					</span>
+				</button>
+				<!-- Dropdown menu -->
+				<div id="menuDropdown" class="text-gray_light z-10 py-4 px-10 dropdown-menu hidden  bg-white rounded-[10px]">
+	<div class="flex items-center gap-2 text-center">
+		<span class="grid grid-flow-row gap-[3px] grid-cols-2 grid-rows-2">
+	<span class="bg-blue_500  w-[5px] rounded-full h-[5px]"></span>
+	<span class="bg-green_500  w-[5px] rounded-full h-[5px]"></span>
+	<span class="bg-red_500  w-[5px] rounded-full h-[5px]"></span>
+	<span class="bg-yellow_500  w-[5px] rounded-full h-[5px]"></span>
+</span>
+
+		<span>Услуги</span>
+	</div>
+	<ul class="py-2 text-sm border-0 " aria-labelledby="menuDropdownButton">
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-yellow_border bg-yellow_500"></span>
+		<a href="services-page.html" data-hover="Брендинг" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-yellow_border hover:text-yellow_500  before:transition-[width] before:duration-500 hover:before:w-full">Брендинг</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-green_border bg-green_500"></span>
+		<a href="services-page.html" data-hover="Полиграфия" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-green_border hover:text-green_500  before:transition-[width] before:duration-500 hover:before:w-full">Полиграфия</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+		<a href="services-page.html" data-hover="Разработка" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-blue_border hover:text-blue_500  before:transition-[width] before:duration-500 hover:before:w-full">Разработка</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-purple_border bg-purple_500"></span>
+		<a href="services-page.html" data-hover="Мобильная разработка" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-purple_border hover:text-purple_500  before:transition-[width] before:duration-500 hover:before:w-full">Мобильная разработка</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-pink_border bg-pink_500"></span>
+		<a href="services-page.html" data-hover="Реклама" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-pink_border hover:text-pink_500  before:transition-[width] before:duration-500 hover:before:w-full">Реклама</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-red_border bg-red_500"></span>
+		<a href="services-page.html" data-hover="Motion-дизайн" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-red_border hover:text-red_500  before:transition-[width] before:duration-500 hover:before:w-full">Motion-дизайн</a>
+	</div>
+
+		</li>
+	</ul>
+</div>
+			</div>
+			<div class="lg:w-[12.6%] md:w-1/6 sm:w-1/5 w-1/3 md:mr-7 mr-3 max-[400px]:hidden">
+				<ul class="flex items-center justify-between gap-2 max-w-36">
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/telegramm.svg" alt="telegramm" width="20" height="20" />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/whatsapp.svg" alt="whatsapp" width="20" height="20" />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/viber.svg" alt="viber" width="20" height="20" />
+		</a>
+	</li>
+</ul>
+			</div>
+			<div class="hidden w-1/4 mr-7 lg:w-1/6 lg:block">
+				<div class="flex flex-col gap-3 md:gap-1 ">
+	<a data-hover="+375 (29) 305 47 00" href="tel:+375293054700"
+		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full  leading-tight text-txt"
+		style="background: url(./images/icons/mts.svg) no-repeat left 50% / 13px 15px"> +375 (29) 305 47 00
+	</a>
+	<a data-hover="+375 (33) 305 47 00" href="tel:+375333054700"
+		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight text-txt"
+		style="background: url(./images/icons/a1.svg) no-repeat left 50% / 13px 15px"> +375 (33) 305 47 00
+	</a>
+</div>
+			</div>
+			<div class="hidden w-1/6 lg:block">
+				<button data-modal-target="callback-modal" data-modal-toggle="callback-modal"
+					class="relative items-center justify-start inline-block px-8 py-4 overflow-hidden font-medium transition-all border rounded-full shadow border-gray_border bg-gray_light hover:bg-white group"
+					type="button">
+					<span
+						class="absolute inset-0 border-0 group-hover:border-[40px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+					<span
+						class="relative w-full text-base leading-tight text-white transition-colors duration-500 ease-in-out text-nowrap group-hover:text-gray_500">Работать
+						с нами</span>
+				</button>
+				
+
+			</div>
+			<div class="w-1/4 md:w-1/12">
+				<button data-collapse-toggle="mobile-menu-2" type="button"
+					class="inline-flex items-center justify-end w-full gap-3 p-2 ml-1 font-medium text-white rounded-lg font-display focus:outline-none "
+					aria-controls="mobile-menu-2" aria-expanded="true">
+					<span class="flex flex-col gap-[3px]">
+	<span class="bg-blue_500 w-[5px] h-[5px]"></span>
+	<span class="bg-red_500 w-[5px] h-[5px]"></span>
+	<span class="bg-yellow_500 w-[5px] h-[5px]"></span>
+</span>
+
+					<span class="">Меню</span>
+				</button>
+
+			</div>
+		</div>
+		<nav class="hidden w-full " id="mobile-menu-2">
+	<div class="grid grid-cols-10 gap-3 py-4 md:gap-7">
+		<div class="col-span-10 md:col-span-2">
+			<ul class="flex flex-col gap-2 text-xl font-bold leading-tight text-white md:gap-4 font-display">
+	<li>
+		<a href="about-page.html"
+			class="relative inline-block transition-colors duration-300 group text-txt hover:text-blue-500">
+			<span class="relative z-10 text-nowrap">
+				О студии
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+	<li>
+		<a href="portfolio-page.html"
+			class="relative inline-block transition-colors duration-300 group text-txt hover:text-blue-500">
+			<span class="relative z-10 text-nowrap">
+				Портфолио
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+	<li>
+		<a href="contacts.html"
+			class="relative inline-block transition-colors duration-300 group text-txt hover:text-blue-500">
+			<span class="relative z-10 text-nowrap">
+				Контакты
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+</ul>
+		</div>
+		<div class="col-span-10 col-start-1 md:col-span-12 md:col-start-6">
+			<div class="flex flex-col gap-5">
+	<span class="text-xl font-bold leading-tight text-white font-display">Услуги</span>
+	<ul class="grid grid-flow-row grid-cols-1 grid-rows-3 text-lg leading-tight md:grid-cols-2 text-txt">
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-yellow_border bg-yellow_500"></span>
+		<a href="services-page.html" data-hover="Брендинг" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-yellow_border hover:text-yellow_500  before:transition-[width] before:duration-500 hover:before:w-full">Брендинг</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-green_border bg-green_500"></span>
+		<a href="services-page.html" data-hover="Полиграфия" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-green_border hover:text-green_500  before:transition-[width] before:duration-500 hover:before:w-full">Полиграфия</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+		<a href="services-page.html" data-hover="Разработка" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-blue_border hover:text-blue_500  before:transition-[width] before:duration-500 hover:before:w-full">Разработка</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-purple_border bg-purple_500"></span>
+		<a href="services-page.html" data-hover="Мобильная разработка" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-purple_border hover:text-purple_500  before:transition-[width] before:duration-500 hover:before:w-full">Мобильная разработка</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-pink_border bg-pink_500"></span>
+		<a href="services-page.html" data-hover="Реклама" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-pink_border hover:text-pink_500  before:transition-[width] before:duration-500 hover:before:w-full">Реклама</a>
+	</div>
+
+		</li>
+		<li class="mb-2">
+			
+	<div class="flex items-center gap-2">
+		<span class="w-4 h-4 rounded-full border-red_border bg-red_500"></span>
+		<a href="services-page.html" data-hover="Motion-дизайн" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-red_border hover:text-red_500  before:transition-[width] before:duration-500 hover:before:w-full">Motion-дизайн</a>
+	</div>
+
+		</li>
+	</ul>
+</div>
+		</div>
+		<div class="block col-span-10 md:col-span-12 md:hidden">
+			<div class="flex flex-col gap-3 md:gap-1 ">
+	<a data-hover="+375 (29) 305 47 00" href="tel:+375293054700"
+		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full  leading-tight text-txt"
+		style="background: url(./images/icons/mts.svg) no-repeat left 50% / 13px 15px"> +375 (29) 305 47 00
+	</a>
+	<a data-hover="+375 (33) 305 47 00" href="tel:+375333054700"
+		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight text-txt"
+		style="background: url(./images/icons/a1.svg) no-repeat left 50% / 13px 15px"> +375 (33) 305 47 00
+	</a>
+</div>
+		</div>
+		<div class="block col-span-10 md:col-span-12 md:hidden">
+			<ul class="flex items-center justify-between gap-2 max-w-36">
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/telegramm.svg" alt="telegramm" width="20" height="20" />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/whatsapp.svg" alt="whatsapp" width="20" height="20" />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/viber.svg" alt="viber" width="20" height="20" />
+		</a>
+	</li>
+</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+	</div>
+</header>
+		<main class="pt-24">
+			<div class="container">
+				<nav class="flex pt-24" aria-label="Breadcrumb">
+	<ol class="inline-flex items-center space-x-1 md:space-x-2 ">
+		<li class="inline-flex items-center">
+			<a href="/" class="flex items-center justify-center w-10 h-10 border rounded-full bg-gray_light border-gray_border ">
+				<img src="./images/icons/home.svg" alt="home" />
+			</a>
+		</li>
+		<li aria-current="page">
+			<div class="relative flex items-center text-white ml-7 after:absolute after:top-1/2 after:w-4 after:h-px after:bg-gray_border after:-left-7">
+				<span class="leading-tight">Название проекта</span>
+			</div>
+		</li>
+	</ol>
+</nav>
+				<section class="case py-14">
+	<div
+		class=" pseudo-grid mb-20 relative before:absolute before:block  before:top-[74%] before:left-[60%] before:-bottom-[168%] before:right-0">
+		<div class="mb-4">
+			<h2 class="font-bold text-white font-display text-5xl sm:text-[64px]  leading-tight text-balance ">
+	HomeID
+</h2>
+		</div>
+		<div class="">
+			<p class="text-xl leading-tight  text-txt text-balance">Домофонная система</p>
+
+		</div>
+	</div>
+	<div class="grid grid-cols-2 gap-7">
+		<div class="col-span-2 py-4 lg:col-span-1">
+			<div class="flex flex-col h-full gap-6">
+				<div class="flex flex-col gap-2">
+					<h3 class="text-xl font-bold leading-tight text-white font-display">О проекте</h3>
+					<p class="text-lg leading-tight text-txt">HomeID - облачное решение, которое работает как привычная домофонная
+						система, только без проводов, без оконечных
+						устройств в квартирах и дополнительных серверов</p>
+				</div>
+				<div class="flex flex-col gap-2">
+					<h3 class="text-xl font-bold leading-tight text-white font-display">Задача</h3>
+					<p class="text-lg leading-tight text-txt">Разработать структуру сайта и дизайн в светлом, минималистичном
+						стиле. Отрисовать стильные, понятные, минималистичные
+						схематичные изображения работы системы HomeID. Добавить языковые версии сайта. Настроить SEO.</p>
+				</div>
+				<div class="flex items-center mt-auto gap-7">
+					<a href="#"
+						class="font-medium  px-8 py-4 rounded-[80px] border justify-center items-center gap-2.5 inline-flex text-center text-white text-base font-display border-blue_border bg-blue_500 text-nowrap hover:border-white/50 leading-tight max-w-48">Кейс
+						на Behance</a>
+					<a href="#" class="leading-tight underline text-blue_500 hover:text-blue_border">Ссылка на сайт</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-2 lg:col-span-1 ">
+			<div class="grid grid-cols-2 gap-7">
+				<div class="col-span-2 lg:col-span-1 ">
+					<div class="flex flex-col h-full gap-8">
+						<div class="flex-grow basis-0 border bg-gray_light border-gray_border rounded-[10px] p-5">
+							<div class="flex flex-col gap-2">
+								<h3 class="text-xl font-bold leading-tight text-white font-display">Клиент</h3>
+								<p class="text-lg leading-tight text-txt">ООО «Гмартикун»</p>
+							</div>
+						</div>
+						<div class="flex-grow basis-0 border bg-gray_light border-gray_border rounded-[10px] p-5">
+							<div class="flex flex-col gap-2">
+								<h3 class="text-xl font-bold leading-tight text-white font-display">Отрасль</h3>
+								<p class="text-lg leading-tight text-txt">Информационные технологии</p>
+							</div>
+						</div>
+						<div class="flex-grow basis-0 border bg-gray_light border-gray_border rounded-[10px] p-5">
+							<div class="flex flex-col gap-2">
+								<h3 class="text-xl font-bold leading-tight text-white font-display">Год запуска</h3>
+								<p class="text-lg leading-tight text-txt">2023</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-span-2 lg:col-span-1">
+					<div class="border bg-gray_light border-gray_border rounded-[10px] p-5">
+						<h3 class="text-xl font-bold leading-tight text-white font-display mb-2.5">Тезисно о проекте</h3>
+						<ul class="space-y-2 text-lg leading-tight text-txt">
+							<li class="">Web-разработка</li>
+							<li class="">Сайт на Tilda</li>
+							<li class="">Сайт под SEO-продвижение</li>
+							<li class="">Сбор<br>семантического ядра и формирование структуры сайта</li>
+							<li class="">Прототипирование</li>
+							<li class="">UX/UI дизайн</li>
+							<li class="">Копирайтинг</li>
+							<li class="">Адаптивность</li>
+							<li class="">SEO-оптимизаия</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="design py-[70px]">
+	<div class="mb-4">		
+		<div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-gray_light border-gray_border rounded-[20px] inline-flex "
+>
+	Дизайн элементы
+</div>
+
+	</div>
+	<div class="grid grid-cols-4">
+		<div class="col-span-4 lg:col-span-3">
+			<div class="mb-4">
+				
+<h2 class="font-bold text-white text-balance font-display text-3xl sm:text-[40px] leading-tight">
+	Мы готовы работать с разными задачами, но для примера описали самые популярные
+</h2>
+			</div>
+			<div class="mb-9">
+				<p class="text-xl leading-tight  text-txt text-balance">Стоимость каждого проекта рассчитывается	индивидуально, в зависимости от объёмов, сложности и сроков.</p>
+
+			</div>
+		</div>
+	</div>
+	<div class="grid grid-cols-2 gap-x-7 gap-y-8">
+		<div class="col-span-2 lg:col-span-1">
+			<div class="pt-3 rounded-[10px] border border-gray_border  bg-gray_light">
+				<div class="flex gap-2 px-4 mb-4">
+					<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+					<p class="text-sm leading-tight text-txt">Цветовое решение</p>
+				</div>
+				<div class="">
+					<img src="./images/phoenix1.png" alt="phoenix" class="w-full" />
+				</div>
+			</div>
+		</div>
+		<div class="col-span-2 lg:col-span-1">
+			<div class="pt-3 rounded-[10px] border border-gray_border  bg-gray_light">
+				<div class="flex gap-2 px-4 mb-4">
+					<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+					<p class="text-sm leading-tight text-txt">Типографика</p>
+				</div>
+				<div class="">
+					<img src="./images/phoenix1.png" alt="phoenix" class="w-full" />
+				</div>
+			</div>
+		</div>
+		<div class="col-span-2">
+			<div class="pt-3 rounded-[10px] border border-gray_border  bg-gray_light">
+				<div class="flex gap-2 px-4 mb-4">
+					<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+					<p class="text-sm leading-tight text-txt">UI элементы</p>
+				</div>
+				<div class="w-full">
+					<img src="./images/phoenix1.png" alt="phoenix" class="w-full" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			</div>
+			<section class="py-2 result">
+	<div class="container">
+
+		<div class="px-3">
+			<div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-gray_light border-gray_border rounded-[20px] inline-flex "
+>
+	Результат
+</div>
+
+		</div>
+		<div class="grid grid-cols-4">
+			<div class="col-span-4 lg:col-span-3">
+				<div class="px-3">
+					
+<h2 class="font-bold text-white text-balance font-display text-3xl sm:text-[40px] leading-tight">
+	Новый дизайн сайта, удовлетворяющий требованиям клиента
+</h2>
+				</div>
+				<div class="mb-[70px]">
+					<p class="text-xl leading-tight  text-txt text-balance">Стиль, который мы разработали для сайта,	заказчики стали использовать в различных промоматериалах для онлайн- и офлайн-активностей.</p>
+
+				</div>
+			</div>
+		</div>
+		<a href="#" class="pt-3 rounded-[10px] border border-gray_border  bg-gray_light">
+			<div class="flex gap-2 px-4 mb-2.5">
+				<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
+				<p class="text-sm leading-tight text-txt">Видеопрезентация проекта</p>
+			</div>
+			<div class="w-full">
+				<img src="./images/result1.png" alt="result" class="w-full" />
+			</div>
+		</a>
+	</div>
+	<div class="-mx-4 result__slider slider">
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result2.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result3.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result4.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result5.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result6.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result7.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result8.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result9.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 fslider-item">
+			<img src="./images/result2.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result3.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result4.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result5.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result6.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result7.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result8.png" alt="result" class="w-full" />
+		</div>
+		<div class="px-3 mb-5 slider-item">
+			<img src="./images/result9.png" alt="result" class="w-full" />
+		</div>
+	</div>
+</section>
+			<div class="container">
+				<section class="total pt-28 pb-[70px]">
+	<div class="mb-4">
+		<div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-gray_light border-gray_border rounded-[20px] inline-flex "
+>
+	Итог
+</div>
+
+	</div>
+	<div class="grid grid-cols-3 mb-[70px]">
+		<div class="col-span-3 lg:col-span-2">
+			<div class="">
+				
+<h2 class="font-bold text-white text-balance font-display text-3xl sm:text-[40px] leading-tight">
+	Ключевые моменты, которые мы решили в ходе работы
+</h2>
+			</div>
+		</div>
+	</div>
+
+	<ul class="flex flex-col space-y-4 text-xl leading-tight text-txt text-balance">
+		<li class="relative pb-3 border-b border-solid border-b-gray_border sm:ps-24 ps-12">
+			<span class="absolute flex items-center justify-center w-10 h-10 rounded-full bg-gray_light start-0">
+				<svg class="w-4 h-4 text-gray_500" aria-hidden="true" width="16.666664" height="16.666748"
+					viewBox="0 0 16.6667 16.6667" fill="none" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path
+						d="M8.33333 16.6667C3.73083 16.6667 0 12.9358 0 8.33325C0 3.73071 3.73083 0 8.33333 0C12.9358 0 16.6667 3.73071 16.6667 8.33325C16.6667 12.9358 12.9358 16.6667 8.33333 16.6667ZM8.33333 15C10.1014 15 11.7971 14.2976 13.0474 13.0474C14.2976 11.7971 15 10.1016 15 8.33325C15 6.56519 14.2976 4.86963 13.0474 3.61938C11.7971 2.36914 10.1014 1.66675 8.33333 1.66675C6.56522 1.66675 4.86953 2.36914 3.61929 3.61938C2.36905 4.86963 1.66667 6.56519 1.66667 8.33325C1.66667 10.1016 2.36905 11.7971 3.61929 13.0474C4.86953 14.2976 6.56522 15 8.33333 15ZM7.5025 11.6667L3.96667 8.13086L5.145 6.95239L7.5025 9.31006L12.2158 4.59595L13.395 5.77417L7.5025 11.6667Z"
+						fill="#31B970" fill-opacity="1.000000" fill-rule="nonzero" />
+				</svg>
+			</span>
+			<div class="grid grid-cols-11 gap-7">
+				<div class="col-span-11 lg:col-span-4">
+					<h3 class="font-bold text-white font-display">Разработали четкую и понятную структуру сайта</h3>
+				</div>
+				<div class="col-span-11 lg:col-span-6 lg:col-start-6">
+					<p class="text-lg leading-tight">На начальном этапе с SEO-специалистом собрали семантическое ядро, определили
+						популярные запросы и составили структуру
+						сайта</p>
+				</div>
+			</div>
+		</li>
+		<li class="relative pb-3 border-b border-solid border-b-gray_border sm:ps-24 ps-12">
+			<span class="absolute flex items-center justify-center w-10 h-10 rounded-full bg-gray_light start-0">
+				<svg class="w-4 h-4 text-gray_500" aria-hidden="true" width="16.666664" height="16.666748"
+					viewBox="0 0 16.6667 16.6667" fill="none" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path
+						d="M8.33333 16.6667C3.73083 16.6667 0 12.9358 0 8.33325C0 3.73071 3.73083 0 8.33333 0C12.9358 0 16.6667 3.73071 16.6667 8.33325C16.6667 12.9358 12.9358 16.6667 8.33333 16.6667ZM8.33333 15C10.1014 15 11.7971 14.2976 13.0474 13.0474C14.2976 11.7971 15 10.1016 15 8.33325C15 6.56519 14.2976 4.86963 13.0474 3.61938C11.7971 2.36914 10.1014 1.66675 8.33333 1.66675C6.56522 1.66675 4.86953 2.36914 3.61929 3.61938C2.36905 4.86963 1.66667 6.56519 1.66667 8.33325C1.66667 10.1016 2.36905 11.7971 3.61929 13.0474C4.86953 14.2976 6.56522 15 8.33333 15ZM7.5025 11.6667L3.96667 8.13086L5.145 6.95239L7.5025 9.31006L12.2158 4.59595L13.395 5.77417L7.5025 11.6667Z"
+						fill="#31B970" fill-opacity="1.000000" fill-rule="nonzero" />
+				</svg>
+			</span>
+			<div class="grid grid-cols-11 gap-7">
+				<div class="col-span-11 lg:col-span-4">
+					<h3 class="font-bold text-white font-display">Проработали целевую аудиторию</h3>
+				</div>
+				<div class="col-span-11 lg:col-span-6 lg:col-start-6">
+					<p class="text-lg leading-tight">Выявили, что основной упор необходимо делать на застройщиков, интеграторов,
+						жильцов</p>
+				</div>
+			</div>
+		</li>
+		<li class="relative pb-3 border-b border-solid border-b-gray_border sm:ps-24 ps-12">
+			<span class="absolute flex items-center justify-center w-10 h-10 rounded-full bg-gray_light start-0">
+				<svg class="w-4 h-4 text-gray_500" aria-hidden="true" width="16.666664" height="16.666748"
+					viewBox="0 0 16.6667 16.6667" fill="none" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path
+						d="M8.33333 16.6667C3.73083 16.6667 0 12.9358 0 8.33325C0 3.73071 3.73083 0 8.33333 0C12.9358 0 16.6667 3.73071 16.6667 8.33325C16.6667 12.9358 12.9358 16.6667 8.33333 16.6667ZM8.33333 15C10.1014 15 11.7971 14.2976 13.0474 13.0474C14.2976 11.7971 15 10.1016 15 8.33325C15 6.56519 14.2976 4.86963 13.0474 3.61938C11.7971 2.36914 10.1014 1.66675 8.33333 1.66675C6.56522 1.66675 4.86953 2.36914 3.61929 3.61938C2.36905 4.86963 1.66667 6.56519 1.66667 8.33325C1.66667 10.1016 2.36905 11.7971 3.61929 13.0474C4.86953 14.2976 6.56522 15 8.33333 15ZM7.5025 11.6667L3.96667 8.13086L5.145 6.95239L7.5025 9.31006L12.2158 4.59595L13.395 5.77417L7.5025 11.6667Z"
+						fill="#31B970" fill-opacity="1.000000" fill-rule="nonzero" />
+				</svg>
+			</span>
+			<div class="grid grid-cols-11 gap-7">
+				<div class="col-span-11 lg:col-span-4">
+					<h3 class="font-bold text-white font-display">Разработали дизайн веб-сайта</h3>
+				</div>
+				<div class="col-span-11 lg:col-span-6 lg:col-start-6">
+					<p class="text-lg leading-tight">Отрисовали дизайн в минималистичном стиле с использованием уникальной
+						графики, схем, анимации</p>
+				</div>
+			</div>
+		</li>
+		<li class="relative pb-3 border-b border-solid border-b-gray_border sm:ps-24 ps-12">
+			<span class="absolute flex items-center justify-center w-10 h-10 rounded-full bg-gray_light start-0">
+				<svg class="w-4 h-4 text-gray_500" aria-hidden="true" width="16.666664" height="16.666748"
+					viewBox="0 0 16.6667 16.6667" fill="none" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path
+						d="M8.33333 16.6667C3.73083 16.6667 0 12.9358 0 8.33325C0 3.73071 3.73083 0 8.33333 0C12.9358 0 16.6667 3.73071 16.6667 8.33325C16.6667 12.9358 12.9358 16.6667 8.33333 16.6667ZM8.33333 15C10.1014 15 11.7971 14.2976 13.0474 13.0474C14.2976 11.7971 15 10.1016 15 8.33325C15 6.56519 14.2976 4.86963 13.0474 3.61938C11.7971 2.36914 10.1014 1.66675 8.33333 1.66675C6.56522 1.66675 4.86953 2.36914 3.61929 3.61938C2.36905 4.86963 1.66667 6.56519 1.66667 8.33325C1.66667 10.1016 2.36905 11.7971 3.61929 13.0474C4.86953 14.2976 6.56522 15 8.33333 15ZM7.5025 11.6667L3.96667 8.13086L5.145 6.95239L7.5025 9.31006L12.2158 4.59595L13.395 5.77417L7.5025 11.6667Z"
+						fill="#31B970" fill-opacity="1.000000" fill-rule="nonzero" />
+				</svg>
+			</span>
+			<div class="grid grid-cols-11 gap-7">
+				<div class="col-span-11 lg:col-span-4">
+					<h3 class="font-bold text-white font-display">Оптимизировали сайт под поисковые системы</h3>
+				</div>
+				<div class="col-span-11 lg:col-span-6 lg:col-start-6">
+					<p class="text-lg leading-tight">Ключевыми элементами оптимизации являются выбор ключевых слов, оптимизация
+						контента и технические настройки сайта.</p>
+				</div>
+			</div>
+		</li>
+		<li class="relative pb-3 border-b border-solid border-b-gray_border sm:ps-24 ps-12">
+			<span class="absolute flex items-center justify-center w-10 h-10 rounded-full bg-gray_light start-0">
+				<svg class="w-4 h-4 text-gray_500" aria-hidden="true" width="16.666664" height="16.666748"
+					viewBox="0 0 16.6667 16.6667" fill="none" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path
+						d="M8.33333 16.6667C3.73083 16.6667 0 12.9358 0 8.33325C0 3.73071 3.73083 0 8.33333 0C12.9358 0 16.6667 3.73071 16.6667 8.33325C16.6667 12.9358 12.9358 16.6667 8.33333 16.6667ZM8.33333 15C10.1014 15 11.7971 14.2976 13.0474 13.0474C14.2976 11.7971 15 10.1016 15 8.33325C15 6.56519 14.2976 4.86963 13.0474 3.61938C11.7971 2.36914 10.1014 1.66675 8.33333 1.66675C6.56522 1.66675 4.86953 2.36914 3.61929 3.61938C2.36905 4.86963 1.66667 6.56519 1.66667 8.33325C1.66667 10.1016 2.36905 11.7971 3.61929 13.0474C4.86953 14.2976 6.56522 15 8.33333 15ZM7.5025 11.6667L3.96667 8.13086L5.145 6.95239L7.5025 9.31006L12.2158 4.59595L13.395 5.77417L7.5025 11.6667Z"
+						fill="#31B970" fill-opacity="1.000000" fill-rule="nonzero" />
+				</svg>
+			</span>
+			<div class="grid grid-cols-11 gap-7">
+				<div class="col-span-11 lg:col-span-4">
+					<h3 class="font-bold text-white font-display">Увеличили количество заявок</h3>
+				</div>
+				<div class="col-span-11 lg:col-span-6 lg:col-start-6">
+					<p class="text-lg leading-tight">С запуском продукта число конверсий и интерес к продукту возрос</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>
+				<section class="contacts py-14">
+
+	<div class="grid grid-cols-6 gap-7">
+		<div class="flex flex-col col-span-6 pb-6 lg:col-span-3">
+			<div class="mb-4 max-w-32">
+				<div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-gray_light border-gray_border rounded-[20px] inline-flex "
+>
+	Контакты
+</div>
+
+			</div>
+			<div class="mb-4">
+				
+<h2 class="font-bold text-white text-balance font-display text-3xl sm:text-[40px] leading-tight">
+	Расслабься, мы сделаем за тебя всю работу!
+</h2>
+			</div>
+			<p class="text-xl leading-tight text-txt mb-11">
+				Мы поможем вам создать дизайн, который очаровывает и вдохновляет!
+			</p>
+			<h3 class="mb-4 text-xl font-bold leading-tight text-white font-display">
+				Мы в социальных сетях
+			</h3>
+			<ul class="flex items-center justify-between gap-2 transition duration-500 max-w-48">
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/social border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/Behance.svg" alt="Behance"
+				 />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/social border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/dribbble.svg" alt="dribbble"
+				 />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/social border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/inst.svg" alt="inst"  />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/social border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/Linkedin.svg" alt="Linkedin"
+				 />
+		</a>
+	</li>
+</ul>
+			<div class="grid grid-cols-6 mt-4 lg:mt-auto gap-7">
+				<div class="col-span-6 md:col-span-3 lg:col-span-2">
+					<a href="" class="flex gap-3">
+						<span class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_500">
+							<img src="./images/icons/map.svg" alt="г. Минск, БЦ S.Union" />
+						</span>
+						<p class="text-sm font-medium leading-tight text-txt font-display">
+							г. Минск,<br />
+							БЦ S.Union
+						</p>
+					</a>
+				</div>
+				<div class="col-span-6 md:col-span-3 lg:col-span-4">
+					<form class="flex gap-3">
+						<label for="file" class="flex items-center w-full h-full gap-3 text-sm text-txt font-display text-balance">
+							<span
+								class="flex items-center justify-center w-10 h-10 border rounded-full min-w-10 border-gray_border bg-gray_500">
+								<img src="./images/icons/upload-file.svg" alt="загрузите файл" />
+							</span>
+							<span>Если у вас есть ТЗ, вы можете прислать его нам и мы оценим
+								проект</span>
+						</label>
+						<input class="hidden" aria-describedby="upload_file" id="file" type="file" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-span-6 lg:col-span-3">
+			<div class="grid grid-cols-6 gap-x-9 gap-y-7">
+	<div class="col-span-6 sm:col-span-3 min-h-72">
+		<div class="border rounded-[10px] border-gray_border h-full flex flex-col py-6 px-7">
+			<h3 class="mb-2 text-lg font-medium leading-tight text-white">
+				Начать<br />
+				переписку
+			</h3>
+			<p class="leading-tight text-txt">
+				Выбери удобный для себя мессенджер
+			</p>
+			<div class="mt-auto">
+				<ul class="flex items-center justify-between gap-2 max-w-36">
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/telegramm.svg" alt="telegramm" width="20" height="20" />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/whatsapp.svg" alt="whatsapp" width="20" height="20" />
+		</a>
+	</li>
+	<li>
+		<a href="#"
+			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
+			<img src="./images/icons/viber.svg" alt="viber" width="20" height="20" />
+		</a>
+	</li>
+</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-span-6 sm:col-span-3 min-h-72">
+		<div class="border rounded-[10px] border-gray_border h-full flex flex-col py-6 px-7">
+			<h3 class="text-lg font-medium leading-tight text-white">
+				Поговорить по телефону
+			</h3>
+
+			<div class="mt-auto"><div class="flex flex-col gap-3 md:gap-1 ">
+	<a data-hover="+375 (29) 305 47 00" href="tel:+375293054700"
+		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full  leading-tight text-txt"
+		style="background: url(./images/icons/mts.svg) no-repeat left 50% / 13px 15px"> +375 (29) 305 47 00
+	</a>
+	<a data-hover="+375 (33) 305 47 00" href="tel:+375333054700"
+		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight text-txt"
+		style="background: url(./images/icons/a1.svg) no-repeat left 50% / 13px 15px"> +375 (33) 305 47 00
+	</a>
+</div></div>
+		</div>
+	</div>
+	<div class="col-span-6 sm:col-span-3 min-h-72">
+		<div class="border rounded-[10px] border-gray_border h-full flex flex-col py-6 px-7">
+			<h3 class="text-lg font-medium leading-tight text-white">
+				Написать на почту
+			</h3>
+
+			<div class="mt-auto">
+				<a href="" class="flex items-center gap-3">
+					<span
+						class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_500"><img
+							src="./images/icons/mail.svg" alt="mail" /></span>
+					<p data-hover="info@atib.by"
+						class="relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight text-txt">
+						info@atib.by</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-span-6 sm:col-span-3 min-h-72">
+		<div class="border rounded-[10px] border-gray_border h-full flex flex-col py-6 px-7">
+			<h3 class="text-lg font-medium leading-tight text-white">
+				Заполнить бриф
+			</h3>
+			<form class="flex items-center gap-3 mt-auto">
+				<label for="download" class="flex items-center gap-3 cursor-pointer">
+					<span
+						class="flex items-center justify-center w-10 h-10 border rounded-full border-gray_border bg-gray_500 min-w-10"><img
+							src="./images/icons/download.svg" alt="Заполнить бриф" /></span>
+					<span data-hover="Заполнить бриф"
+						class="relative block before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight w-full h-full text-txt">Заполнить
+						бриф</span>
+				</label>
+				<input class="hidden" aria-describedby="upload_file" id="download" type="file" />
+			</form>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+
+</section>
+			</div>
+		</main>
+		<footer class="py-3 footer">
+	<div class="container">
+		<div class="grid grid-cols-12 py-4 border-t gap-7 border-t-gray_border">
+			<div class="col-span-12 lg:col-span-5">
+				<div class="flex mb-10 gap-7">
+					<a href="/" class="block max-w-full text-center">
+						<img src="./images/icons/logo.svg" alt="logo" class="max-w-full" />
+					</a>
+					<small class="text-sm leading-tight text-txt">
+						©<a href="#" class=""> Дизайн-студия АТИБ, 2023</a>
+					</small>
+				</div>
+				<div
+					class="flex flex-wrap items-center justify-center gap-7 sm:justify-between sm:gap-1"
+				>
+					<div class="">
+						<img src="./images/icons/Alfa.svg" alt="Alfa" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/Visa.svg" alt="Visa" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/Visa_secure.svg" alt="Visa secure" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/Master.svg" alt="Master" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/Master_ID.svg" alt="Master ID" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/Pay.svg" alt="Pay" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/samsung_pay.svg" alt="Samsung pay" class="" />
+					</div>
+					<div class="">
+						<img src="./images/icons/Белкарт.svg" alt="Белкарт" class="" />
+					</div>
+					<div class="">
+						<img
+							src="./images/icons/Белкарт_Интернет.svg"
+							alt="Белкарт Интернет"
+							class=""
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col col-span-12 lg:col-span-7 lg:ms-24">
+				<div class="flex flex-col mb-10 lg:self-end lg:mr-9">
+					<a href="#" class="text-sm leading-tight text-txt">
+						Политика конфиденциальности</a
+					>
+					<a href="#" class="text-sm leading-tight text-txt"> Способы оплаты</a>
+				</div>
+				<p class="text-sm leading-tight text-txt">
+					Информация, размещенная на сайте, не является публичной офертой!
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<!-- Main modal -->
+<div id="callback-modal" tabindex="-1" aria-hidden="true"
+  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[9999999] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative w-full max-w-4xl max-h-full p-4">
+    <!-- Modal content -->
+    <div class="relative bg-gray_light rounded-[10px] py-10 px-24">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between mb-10">
+        <h3 class="text-white font-display text-[64px] font-bold">
+          Бриф
+        </h3>
+        <button type="button"
+          class="inline-flex items-center justify-center w-8 h-8 text-sm text-white bg-transparent rounded-lg ms-auto "
+          data-modal-hide="callback-modal">
+          <svg class="w-7 h-7" aria-hidden="true" width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="Vector"
+              d="M0.16 -0.05C1.01 -0.9 2.39 -0.9 3.24 -0.05L13.52 10.23L23.8 -0.05C24.65 -0.9 26.03 -0.9 26.88 -0.05C27.74 0.81 27.74 2.19 26.88 3.04L16.61 13.32L26.88 23.59C27.74 24.44 27.74 25.83 26.88 26.68C26.03 27.53 24.65 27.53 23.8 26.68L13.52 16.4L3.24 26.68C2.39 27.53 1.01 27.53 0.16 26.68C-0.69 25.83 -0.69 24.44 0.16 23.59L10.44 13.32L0.16 3.04C-0.69 2.19 -0.69 0.81 0.16 -0.05Z"
+              fill="#BDBDC0" fill-opacity="1.000000" fill-rule="nonzero" />
+            <path id="Vector"
+              d="M12.82 9.52L3.24 -0.05C2.39 -0.9 1.01 -0.9 0.16 -0.05C-0.69 0.81 -0.69 2.19 0.16 3.04L9.73 12.61L10.44 13.32L9.73 14.02L0.16 23.59C-0.69 24.44 -0.69 25.83 0.16 26.68C1.01 27.53 2.39 27.53 3.24 26.68L12.82 17.11L13.52 16.4L14.23 17.11L23.8 26.68C24.65 27.53 26.03 27.53 26.88 26.68C27.74 25.83 27.74 24.44 26.88 23.59L17.31 14.02L16.61 13.32L17.31 12.61L26.88 3.04C27.74 2.19 27.74 0.81 26.88 -0.05C26.03 -0.9 24.65 -0.9 23.8 -0.05L14.23 9.52L13.52 10.23L12.82 9.52ZM1.7 0.24Q2.12 0.24 2.54 0.66L13.52 11.65L24.51 0.66Q24.92 0.24 25.34 0.24Q25.76 0.24 26.18 0.66Q26.59 1.08 26.59 1.5Q26.59 1.91 26.18 2.33L15.19 13.32L26.18 24.3Q26.59 24.72 26.59 25.13Q26.59 25.55 26.18 25.97Q25.76 26.39 25.34 26.39Q24.92 26.39 24.51 25.97L13.52 14.98L2.54 25.97Q2.12 26.39 1.7 26.39Q1.29 26.39 0.87 25.97Q0.45 25.55 0.45 25.13Q0.45 24.72 0.87 24.3L11.85 13.32L0.87 2.33Q0.45 1.91 0.45 1.5Q0.45 1.08 0.87 0.66Q1.29 0.24 1.7 0.24Z"
+              fill="#1E1E1E" fill-opacity="1.000000" fill-rule="evenodd" />
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <form class="flex flex-col" action="#">
+        <div class="mb-4">
+          <div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-purple_light border-purple_border rounded-[20px] inline-flex "
+>
+	Контактные данные
+</div>
+
+        </div>
+        <div class="grid grid-cols-2 mb-6 gap-x-7 gap-y-5">
+          <div class="col-span-2 lg:col-span-1">
+            <div>
+              <label for="name" class="hidden">Фамилия и имя*</label>
+              <input type="text" name="name" id="name"
+                class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt"
+                placeholder="Фамилия и имя*" required="" />
+            </div>
+          </div>
+          <div class="col-span-2 lg:col-span-1">
+            <div>
+              <label for="mail" class="hidden">Почта*</label>
+              <input type="mail" name="mail" id="mail" placeholder="Почта*"
+                class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt"
+                required="" />
+            </div>
+          </div>
+          <div class="col-span-2 lg:col-span-1">
+            <div>
+              <label for="company" class="hidden">Компания</label>
+              <input type="text" name="company" id="company"
+                class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt"
+                placeholder="Компания" required="" />
+            </div>
+          </div>
+          <div class="col-span-2 lg:col-span-1">
+            <div>
+              <label for="tel" class="hidden">Телефон</label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон"
+                class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none form-phone bg-gray_light border-gray_border text-txt"
+                required="" />
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-pink_light border-pink_border rounded-[20px] inline-flex "
+>
+	Услуги
+</div>
+
+        </div>
+        <div class="mb-8">
+          <label for="services" class="hidden mb-2 text-sm font-medium text-white dark:text-white">Вид услуги</label>
+          <select id="services"
+            class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt">
+            <option value="Вид услуги" selected="">Вид услуги</option>
+            <option value="Дизайн лендинга">Дизайн лендинга</option>
+            <option value="Сайт на Тильда">Сайт на Тильда</option>
+            <option value="Разработка логотипа">Разработка логотипа</option>
+            <option value="Многостраничный сайт на cms">Многостраничный сайт на cms</option>
+            <option value="Оформление соц.сетей">Оформление соц.сетей</option>
+            <option value="Сайт-визитка">Сайт-визитка</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-green_light border-green_border rounded-[20px] inline-flex "
+>
+	Несколько слов о проекте
+</div>
+
+        </div>
+        <div class="mb-3">
+          <label for="message" class="hidden">Описание</label>
+          <input type="textarea" name="message" id="message" placeholder="Описание"
+            class="block w-full p-4 text-base leading-tight border rounded-md focus:border-white/50 focus:ring-white/50 focus:outline-none bg-gray_light border-gray_border text-txt"
+            required="" />
+        </div>
+        <div class="mb-6">
+          
+          <label for="file" class="flex justify-center border items-center w-full h-full gap-3 py-3 text-sm border-dashed border-gray_border rounded-[5px] text-txt text-balance">
+            <span>Перетащите или <span class="text-blue_500">выберите файл</span></span>
+          </label>
+          <input class="hidden" aria-describedby="upload_file" id="file" type="file" />
+        </div>
+        <div class="mb-4">
+          <div
+	class="px-4 py-1 text-lg font-medium leading-tight text-white border bg-yellow_light border-yellow_border rounded-[20px] inline-flex "
+>
+	Бюджет
+</div>
+
+        </div>
+        <ul class="flex flex-col gap-3 mb-10 lg:flex-row">
+          <li>
+            <input type="radio" id="price-1" name="hosting" value="менее 1 000 br" class="hidden price" required />
+            <label for="price-1"
+              class="inline-flex rounded-[20px] items-center justify-between w-full px-4 py-2 text-white leading-tight border border-gray_border cursor-pointer price-checked:border-blue_border price-checked:text-blue_border hover:text-white hover:bg-blue_light">
+              <div class="block">
+                <div class="w-full ">менее 1 000 br</div>                
+              </div>              
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="price-2" name="hosting" value="1 000 - 1 500 br" class="hidden price" required />
+            <label for="price-2"
+              class="inline-flex rounded-[20px] items-center justify-between w-full px-4 py-2 text-white leading-tight border border-gray_border cursor-pointer price-checked:border-blue_border price-checked:text-blue_border hover:text-white hover:bg-blue_light">
+              <div class="block">
+                <div class="w-full ">1 000 - 1 500 br</div>                
+              </div>              
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="price-3" name="hosting" value="1 500 - 2 000 br" class="hidden price" required />
+            <label for="price-3"
+              class="inline-flex rounded-[20px] items-center justify-between w-full px-4 py-2 text-white leading-tight border border-gray_border cursor-pointer price-checked:border-blue_border price-checked:text-blue_border hover:text-white hover:bg-blue_light">
+              <div class="block">
+                <div class="w-full ">1 500 - 2 000 br</div>                
+              </div>              
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="price-4" name="hosting" value="более 2 000 br" class="hidden price" required />
+            <label for="price-4"
+              class="inline-flex rounded-[20px] items-center justify-between w-full px-4 py-2 text-white leading-tight border border-gray_border cursor-pointer price-checked:border-blue_border price-checked:text-blue_border hover:text-white hover:bg-blue_light">
+              <div class="block">
+                <div class="w-full ">более 2 000 br</div>                
+              </div>              
+            </label>
+          </li>
+         
+        </ul>
+
+        <button type="submit"
+          class="relative  overflow-hidden  transition-all  shadow  hover:bg-white group font-medium px-8 py-4 rounded-[80px] border justify-center items-center gap-2.5 inline-flex hover:text-blue_500 text-center text-white text-base font-display border-blue_border bg-blue_500 text-nowrap hover:border-white/50 leading-tight w-full max-w-64 self-center">
+          <span
+            class="absolute inset-0 border-0 group-hover:border-[40px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+          <span
+            class="relative w-full text-base leading-tight text-white transition-colors duration-500 ease-in-out text-nowrap group-hover:text-blue_500">Отправить</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+	</div>
+</body>
+
+</html>

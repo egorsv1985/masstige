@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/_head.html',{ "title":"Контакты" })
+
+	<body class="bg-gray_500 body font-SFUIText">
+		<div class="container wrapper">
+			
+			@@include('components/_header.html',{})
+
+			<main class="pt-28">
+				@@include('sections/_breadcrumb.html',{"page": "Контакты"})
+				@@include('sections/_contacts-page.html',{})
+				<section class="relative py-14 quote">
+				@@include('sections/_quote.html',{
+				"img-quote": "adams.png",
+				"alt-quote": "Скон Адамс",
+				"h2-quote": "Красиво оформленное глупое предложение пойдет намного дальше, чем неудачно оформленная замечательная идея",
+				"author-quote": "Скон Адамс",
+				"description-quote": "Американский художник комиксов",
+				"text-size":"3xl",
+				"sm-text-size": "[40px]",
+				})
+				</section>
+			</main>
+			@@include('components/_footer.html',{})
+			@@include('components/_popup.html',{})
+		</div>
+	</body>
+</html>
