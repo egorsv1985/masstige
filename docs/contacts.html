@@ -35,38 +35,82 @@
 		<div class="container wrapper">
 			
 			<header
-	class="fixed py-4 header z-[9999] left-0 right-0 top-0 before:absolute before:inset-0 before:bg-gray_500 before:transition-opacity before:duration-500 before:ease-out backdrop-blur-lg before:opacity-80 before:-z-10">
+	class="fixed py-12 header z-[9999] left-0 right-0 top-0  text-txt group-[.white-text]:text-white group-[id=home]:text-white">
 	<div class="container px-2">
-		<div class="z-40 flex items-center justify-between pb-3 border-b border-b-gray_border">
-			<div class="w-1/3 mr-3 sm:w-1/4 lg:w-1/6 max-[400px]:w-1/2">
+		<div class="z-40 flex justify-between pb-3 ">
+			<div class="">
 				<a href="/" class="block max-w-full text-center">
-					<img src="./images/logo.png" alt="logo" class="max-w-full" width="160" height="34" />
+					<picture><source srcset="./images/logo.webp" type="image/webp"><img src="./images/logo.png" alt="logo" class="max-w-full" width="175" height="180" /></picture>
 				</a>
 			</div>
-			<div class="hidden w-1/2 mr-3 md:mr-7 md:w-1/5 sm:block">
-				<button id="menuDropdownButton" data-dropdown-toggle="menuDropdown" data-dropdown-trigger="hover"
-					class="gap-2 bg-white rounded-[5rem] px-8 py-4 text-center flex items-center" type="button">
-					<span class="grid grid-flow-row gap-[3px] grid-cols-2 grid-rows-2">
-	<span class="bg-blue_500  w-[5px] rounded-full h-[5px]"></span>
-	<span class="bg-green_500  w-[5px] rounded-full h-[5px]"></span>
-	<span class="bg-red_500  w-[5px] rounded-full h-[5px]"></span>
-	<span class="bg-yellow_500  w-[5px] rounded-full h-[5px]"></span>
-</span>
+			<div class="flex justify-between gap-20">
 
-					<span class="text-base font-medium text-gray_500 font-display">
-						Услуги
-					</span>
-				</button>
-				<!-- Dropdown menu -->
-				<div id="menuDropdown" class="text-gray_light z-10 py-4 px-10 dropdown-menu hidden  bg-white rounded-[10px]">
+				<ul class="flex  gap-2 text-lg pt-4 leading-tight  md:gap-8">
+	<li>
+		<a href="about-page.html"
+			class="relative inline-block transition-colors duration-300 group text-txt group-[.white-text]:text-white ">
+			<span class="relative z-10 text-nowrap">
+				О КОМПАНИИ
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+	<li>
+		<a href="portfolio-page.html"
+			class="relative inline-block transition-colors duration-300 group text-txt group-[.white-text]:text-white ">
+			<span class="relative z-10 text-nowrap">
+				СЕРИИ
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+	<li>
+		<a href="contacts.html"
+			class="relative inline-block transition-colors duration-300 group text-txt group-[.white-text]:text-white ">
+			<span class="relative z-10 text-nowrap">
+				ГДЕ КУПИТЬ
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+	<li>
+		<a href="contacts.html"
+			class="relative inline-block transition-colors duration-300 group text-txt group-[.white-text]:text-white ">
+			<span class="relative z-10 text-nowrap">
+				БЛОГ
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+	<li>
+		<a href="contacts.html"
+			class="relative inline-block transition-colors duration-300 group text-txt group-[.white-text]:text-white ">
+			<span class="relative z-10 text-nowrap">
+				КОНТАКТЫ
+			</span>
+			<span
+				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
+		</a>
+	</li>
+</ul>
+				<div class="">
+					<button id="menuDropdownButton" data-dropdown-toggle="menuDropdown" data-dropdown-trigger="hover" class="flex gap-4 items-center"
+						type="button">
+						<span class="text-lg  text-txt uppercase group-[.white-text]:text-white font-display">
+							Каталог
+						</span>
+						<span class="rounded-full border border-white flex justify-center items-center w-14 h-14">
+							<img src="./images/icons/arrow-menu.svg" alt="" class="">
+						</span>
+					</button>
+					<!-- Dropdown menu -->
+					<div id="menuDropdown" class="text-gray_light z-10 py-4 px-10 dropdown-menu hidden  bg-white rounded-[10px]">
 	<div class="flex items-center gap-2 text-center">
-		<span class="grid grid-flow-row gap-[3px] grid-cols-2 grid-rows-2">
-	<span class="bg-blue_500  w-[5px] rounded-full h-[5px]"></span>
-	<span class="bg-green_500  w-[5px] rounded-full h-[5px]"></span>
-	<span class="bg-red_500  w-[5px] rounded-full h-[5px]"></span>
-	<span class="bg-yellow_500  w-[5px] rounded-full h-[5px]"></span>
-</span>
-
+		
 		<span>Услуги</span>
 	</div>
 	<ul class="py-2 text-sm border-0 " aria-labelledby="menuDropdownButton">
@@ -120,199 +164,9 @@
 		</li>
 	</ul>
 </div>
-			</div>
-			<div class="lg:w-[12.6%] md:w-1/6 sm:w-1/5 w-1/3 md:mr-7 mr-3 max-[400px]:hidden">
-				<ul class="flex items-center justify-between gap-2 max-w-36">
-	<li>
-		<a href="#"
-			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
-			<img src="./images/icons/telegramm.svg" alt="telegramm" width="20" height="20" />
-		</a>
-	</li>
-	<li>
-		<a href="#"
-			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
-			<img src="./images/icons/whatsapp.svg" alt="whatsapp" width="20" height="20" />
-		</a>
-	</li>
-	<li>
-		<a href="#"
-			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
-			<img src="./images/icons/viber.svg" alt="viber" width="20" height="20" />
-		</a>
-	</li>
-</ul>
-			</div>
-			<div class="hidden w-1/4 mr-7 lg:w-1/6 lg:block">
-				<div class="flex flex-col gap-3 md:gap-1 ">
-	<a data-hover="+375 (29) 305 47 00" href="tel:+375293054700"
-		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full  leading-tight text-txt"
-		style="background: url(./images/icons/mts.svg) no-repeat left 50% / 13px 15px"> +375 (29) 305 47 00
-	</a>
-	<a data-hover="+375 (33) 305 47 00" href="tel:+375333054700"
-		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight text-txt"
-		style="background: url(./images/icons/a1.svg) no-repeat left 50% / 13px 15px"> +375 (33) 305 47 00
-	</a>
-</div>
-			</div>
-			<div class="hidden w-1/6 lg:block">
-				<button data-modal-target="callback-modal" data-modal-toggle="callback-modal"
-					class="relative items-center justify-start inline-block px-8 py-4 overflow-hidden font-medium transition-all border rounded-full shadow border-gray_border bg-gray_light hover:bg-white group"
-					type="button">
-					<span
-						class="absolute inset-0 border-0 group-hover:border-[40px] ease-linear duration-100 transition-all border-white rounded-full"></span>
-					<span
-						class="relative w-full text-base leading-tight text-white transition-colors duration-500 ease-in-out text-nowrap group-hover:text-gray_500">Работать
-						с нами</span>
-				</button>
-				
-
-			</div>
-			<div class="w-1/4 md:w-1/12">
-				<button data-collapse-toggle="mobile-menu-2" type="button"
-					class="inline-flex items-center justify-end w-full gap-3 p-2 ml-1 font-medium text-white rounded-lg font-display focus:outline-none "
-					aria-controls="mobile-menu-2" aria-expanded="true">
-					<span class="flex flex-col gap-[3px]">
-	<span class="bg-blue_500 w-[5px] h-[5px]"></span>
-	<span class="bg-red_500 w-[5px] h-[5px]"></span>
-	<span class="bg-yellow_500 w-[5px] h-[5px]"></span>
-</span>
-
-					<span class="">Меню</span>
-				</button>
-
+				</div>
 			</div>
 		</div>
-		<nav class="hidden w-full " id="mobile-menu-2">
-	<div class="grid grid-cols-10 gap-3 py-4 md:gap-7">
-		<div class="col-span-10 md:col-span-2">
-			<ul class="flex flex-col gap-2 text-xl font-bold leading-tight text-white md:gap-4 font-display">
-	<li>
-		<a href="about-page.html"
-			class="relative inline-block transition-colors duration-300 group text-txt hover:text-blue-500">
-			<span class="relative z-10 text-nowrap">
-				О студии
-			</span>
-			<span
-				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
-		</a>
-	</li>
-	<li>
-		<a href="portfolio-page.html"
-			class="relative inline-block transition-colors duration-300 group text-txt hover:text-blue-500">
-			<span class="relative z-10 text-nowrap">
-				Портфолио
-			</span>
-			<span
-				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
-		</a>
-	</li>
-	<li>
-		<a href="contacts.html"
-			class="relative inline-block transition-colors duration-300 group text-txt hover:text-blue-500">
-			<span class="relative z-10 text-nowrap">
-				Контакты
-			</span>
-			<span
-				class="absolute bottom-0 left-0 w-full h-px transition-transform duration-300 origin-left transform scale-x-0 bg-white group-hover:scale-x-100"></span>
-		</a>
-	</li>
-</ul>
-		</div>
-		<div class="col-span-10 col-start-1 md:col-span-12 md:col-start-6">
-			<div class="flex flex-col gap-5">
-	<span class="text-xl font-bold leading-tight text-white font-display">Услуги</span>
-	<ul class="grid grid-flow-row grid-cols-1 grid-rows-3 text-lg leading-tight md:grid-cols-2 text-txt">
-		<li class="mb-2">
-			
-	<div class="flex items-center gap-2">
-		<span class="w-4 h-4 rounded-full border-yellow_border bg-yellow_500"></span>
-		<a href="services-page.html" data-hover="Брендинг" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-yellow_border hover:text-yellow_500  before:transition-[width] before:duration-500 hover:before:w-full">Брендинг</a>
-	</div>
-
-		</li>
-		<li class="mb-2">
-			
-	<div class="flex items-center gap-2">
-		<span class="w-4 h-4 rounded-full border-green_border bg-green_500"></span>
-		<a href="services-page.html" data-hover="Полиграфия" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-green_border hover:text-green_500  before:transition-[width] before:duration-500 hover:before:w-full">Полиграфия</a>
-	</div>
-
-		</li>
-		<li class="mb-2">
-			
-	<div class="flex items-center gap-2">
-		<span class="w-4 h-4 rounded-full border-blue_border bg-blue_500"></span>
-		<a href="services-page.html" data-hover="Разработка" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-blue_border hover:text-blue_500  before:transition-[width] before:duration-500 hover:before:w-full">Разработка</a>
-	</div>
-
-		</li>
-		<li class="mb-2">
-			
-	<div class="flex items-center gap-2">
-		<span class="w-4 h-4 rounded-full border-purple_border bg-purple_500"></span>
-		<a href="services-page.html" data-hover="Мобильная разработка" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-purple_border hover:text-purple_500  before:transition-[width] before:duration-500 hover:before:w-full">Мобильная разработка</a>
-	</div>
-
-		</li>
-		<li class="mb-2">
-			
-	<div class="flex items-center gap-2">
-		<span class="w-4 h-4 rounded-full border-pink_border bg-pink_500"></span>
-		<a href="services-page.html" data-hover="Реклама" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-pink_border hover:text-pink_500  before:transition-[width] before:duration-500 hover:before:w-full">Реклама</a>
-	</div>
-
-		</li>
-		<li class="mb-2">
-			
-	<div class="flex items-center gap-2">
-		<span class="w-4 h-4 rounded-full border-red_border bg-red_500"></span>
-		<a href="services-page.html" data-hover="Motion-дизайн" class="relative  before:absolute before:bottom-0 before:left-0 before:overflow-hidden before:w-0 before:border-b-2 before:border-b-red_border hover:text-red_500  before:transition-[width] before:duration-500 hover:before:w-full">Motion-дизайн</a>
-	</div>
-
-		</li>
-	</ul>
-</div>
-		</div>
-		<div class="block col-span-10 md:col-span-12 md:hidden">
-			<div class="flex flex-col gap-3 md:gap-1 ">
-	<a data-hover="+375 (29) 305 47 00" href="tel:+375293054700"
-		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full  leading-tight text-txt"
-		style="background: url(./images/icons/mts.svg) no-repeat left 50% / 13px 15px"> +375 (29) 305 47 00
-	</a>
-	<a data-hover="+375 (33) 305 47 00" href="tel:+375333054700"
-		class="pl-5 relative before:content-[attr(data-hover)] before:absolute before:top-0 before:left-0 before:overflow-hidden  before:h-0 before:pl-5 before:duration-300 before:text-white before:transition-[height] hover:before:h-full leading-tight text-txt"
-		style="background: url(./images/icons/a1.svg) no-repeat left 50% / 13px 15px"> +375 (33) 305 47 00
-	</a>
-</div>
-		</div>
-		<div class="block col-span-10 md:col-span-12 md:hidden">
-			<ul class="flex items-center justify-between gap-2 max-w-36">
-	<li>
-		<a href="#"
-			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
-			<img src="./images/icons/telegramm.svg" alt="telegramm" width="20" height="20" />
-		</a>
-	</li>
-	<li>
-		<a href="#"
-			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
-			<img src="./images/icons/whatsapp.svg" alt="whatsapp" width="20" height="20" />
-		</a>
-	</li>
-	<li>
-		<a href="#"
-			class="flex items-center justify-center w-10 h-10 transition duration-500 border rounded-full group/messengers border-gray_border bg-gray_light hover:border-gray_light hover:bg-gray_border">
-			<img src="./images/icons/viber.svg" alt="viber" width="20" height="20" />
-		</a>
-	</li>
-</ul>
-		</div>
-	</div>
-</nav>
-
-
-
 	</div>
 </header>
 
@@ -350,10 +204,10 @@
 			<div class="flex flex-wrap items-center gap-7 mb-14">
 				<div class="flex">
 					<div class="rounded-full border bg-gray_500 border-blue_500 p-1 w-[65px] h-[65px] about__box-img relative">
-						<img src="./images/team1.png" alt="team" class="rounded-full" />
+						<picture><source srcset="./images/team1.webp" type="image/webp"><img src="./images/team1.png" alt="team" class="rounded-full" /></picture>
 					</div>
 					<div class="rounded-full border bg-gray_500 -ml-2 border-purple_500 p-1 w-[65px] h-[65px] about__box-img relative">
-						<img src="./images/team7.png" alt="team" class="rounded-full" />
+						<picture><source srcset="./images/team7.webp" type="image/webp"><img src="./images/team7.png" alt="team" class="rounded-full" /></picture>
 					</div>
 				</div>
 				<ul class="flex flex-col gap-2 text-sm leading-tight text-txt">
@@ -548,7 +402,7 @@
 	</div>
 	<div class="flex gap-5">
 		<div class="rounded-full">
-			<img src="./images/adams.png" alt="Скон Адамс" class="" />
+			<picture><source srcset="./images/adams.webp" type="image/webp"><img src="./images/adams.png" alt="Скон Адамс" class="" /></picture>
 		</div>
 		<div class="flex flex-col justify-center gap-1">
 			<p class="text-lg font-medium leading-tight text-txt">Скон Адамс</p>
