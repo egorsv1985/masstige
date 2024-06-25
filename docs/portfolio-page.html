@@ -35,17 +35,17 @@
 	<div class="container wrapper">
 
 		<header
-	class="fixed py-12 header z-[9999] left-0 right-0 top-0  text-txt group-[.white-text]:text-white group-[id=home]:text-white">
+	class="fixed py-11 header z-[9999] left-0 right-0 top-0  text-txt group-[.white-text]:text-white group-[id=home]:text-white">
 	<div class="container px-2">
 		<div class="z-40 flex justify-between pb-3 ">
-			<div class="">
+			<div class="pt-2">
 				<a href="/" class="block max-w-full text-center">
 					<img src="./images/logo.png" alt="logo" class="max-w-full" width="175" height="180" />
 				</a>
 			</div>
 			<div class="flex justify-between gap-20">
 
-				<ul class="flex  gap-2 text-lg pt-4 leading-tight  md:gap-8">
+				<ul class="flex  gap-3 text-lg pt-[18px] leading-tight  md:gap-8">
 	<li>
 		<a href="about-page.html"
 			class="relative inline-block transition-colors duration-300 group/menu text-txt group-[.white-text]:text-white ">
@@ -98,14 +98,12 @@
 	</li>
 </ul>
 				<div class="">
-					<button id="menuDropdownButton" data-dropdown-toggle="menuDropdown" data-dropdown-trigger="hover" class="flex gap-4 items-center"
-						type="button">
+					<button class="flex gap-4 items-center header__burger" type="button">
 						<span class="text-lg  text-txt uppercase group-[.white-text]:text-white font-display">
 							Каталог
 						</span>
-						<span class="rounded-full border border-white flex justify-center items-center w-14 h-14">
-							<img src="./images/icons/arrow-menu.svg" alt="" class="">
-						</span>
+						<span
+							class="rounded-full border border-white flex justify-center items-center w-14 h-14 header__arrow"></span>
 					</button>
 					<!-- Dropdown menu -->
 					<div id="menuDropdown" class="text-gray_light z-10 py-4 px-10 dropdown-menu hidden  bg-white rounded-[10px]">

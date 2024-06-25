@@ -1,6 +1,4 @@
 
-
-
 jQuery(document).ready(function () {
 	var e = document.querySelectorAll('.form-phone')
 	jQuery(e).inputmask({
